@@ -5,12 +5,12 @@ const Op = db.Sequelize.Op;
 // Create and Save a new Tutorial
 exports.create = (req, res) => {
   // Validate request
-  if (!req.body.refVehicule) {
+  /*if (!req.body.refVehicule) {
     res.status(400).send({
       message: "Veillez entrer la référence du véhicule!"
     });
     return;
-  }
+  }*/
 
   // Create a Tutorial
   const infos = {
