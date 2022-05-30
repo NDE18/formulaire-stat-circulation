@@ -24,7 +24,7 @@ exports.create = (req, res) => {
     jour:req.body.jour,heure:req.body.heure,region:req.body.region,
     departement:req.body.departement,arrondissement:req.body.arrondissement,
     localite:req.body.localite,axe:req.body.axe, troncon:req.body.troncon, 
-    horsAgglomeration:req.body.horsAgglomeration, collecteur:collecteur,
+    horsAgglomeration:req.body.horsAgglomeration, collecteur:req.body.collecteur,
     agglomerationplus2000:req.body.agglomerationplus2000,
     agglomerationMoins2000:req.body.agglomerationMoins2000,referenceAxe:req.body.referenceAxe,
     usagerImplique:req.body.usagerImplique,natureAccident:req.body.natureAccident,
