@@ -5,7 +5,7 @@ const Op = db.Sequelize.Op;
 // Create and Save a new Tutorial
 exports.create = (req, res) => {
   // Validate request
-  if (!req.body.lieu || req.body.pvNumero) {
+  if (!req.body.lieu || !req.body.pvNumero) {
     res.status(400).send({
       message: "Veillez entrer le lieu et/ou le numéro du pv!"
     });
