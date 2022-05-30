@@ -1,5 +1,8 @@
 module.exports = (sequelize, Sequelize) => {
   const Pv = sequelize.define("pv", {
+    collecteur: {
+      type: Sequelize.STRING
+    },
     lieu: {
       type: Sequelize.STRING
     },
