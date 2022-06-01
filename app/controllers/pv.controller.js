@@ -24,10 +24,7 @@ exports.create = (req, res) => {
     jour:req.body.jour,heure:req.body.heure,region:req.body.region,
     departement:req.body.departement,arrondissement:req.body.arrondissement,
     localite:req.body.localite,axe:req.body.axe, troncon:req.body.troncon, 
-    horsAgglomeration:req.body.horsAgglomeration, collecteur:req.body.collecteur,
-    agglomerationplus2000:req.body.agglomerationplus2000,
-    agglomerationMoins2000:req.body.agglomerationMoins2000,referenceAxe:req.body.referenceAxe,
-    usagerImplique:req.body.usagerImplique,natureAccident:req.body.natureAccident,
+    collecteur:req.body.collecteur,natureAccident:req.body.natureAccident,
     typeDegat:req.body.typeDegat, nombreBlesseLeger:req.body.nombreBlesseLeger, 
     nombreBlesseGrave:req.body.nombreBlesseGrave,nombreDeces:req.body.nombreDeces, 
     nombreDecesHomme:req.body.nombreDecesHomme, nombreDecesFemme:req.body.nombreDecesFemme, 
@@ -35,9 +32,11 @@ exports.create = (req, res) => {
     nombreBlessesHomme:req.body.nombreBlessesHomme, 
     nombreBlessesFemme:req.body.nombreBlessesFemme,
     ageBlessesHomme:req.body.ageBlessesHomme, ageBlessesFemme:req.body.ageBlessesFemme,
-    causeMateriel:req.body.causeMateriel,fauteConduite:req.body.fauteConduite,
-    causeDiverse:req.body.causeDiverse,chausse:req.body.chausse,
-    presumeResponsable:req.body.presumeResponsable, adversaire:req.body.adversaire
+    causeAccident:req.body.causeAccident,chausse:req.body.chausse,
+    nombreAnimal:req.body.nombreAnimal, ombrePieton:req.body.nombrePieton,
+    nombreMoto:req.body.nombreMoto,nombreBus:req.body.nombreBus, 
+    nombreCamion:req.body.nombreCamion, nombreVehicule:req.body.nombreVehicule,
+    nombreEngin:req.body.nombreEngin, vehicule:req.body.vehicule
   };
 
   // Save Tutorial in the database

@@ -39,21 +39,6 @@ module.exports = (sequelize, Sequelize) => {
     troncon: {
       type: Sequelize.STRING
     },
-    horsAgglomeration:{
-      type: Sequelize.BOOLEAN
-    },
-    agglomerationplus2000:{
-      type: Sequelize.BOOLEAN
-    },
-    agglomerationMoins2000:{
-      type: Sequelize.BOOLEAN
-    },
-    referenceAxe: {
-      type: Sequelize.STRING
-    },
-    usagerImplique: {
-      type: Sequelize.STRING
-    },
     natureAccident: {
       type: Sequelize.STRING
     },
@@ -96,14 +81,32 @@ module.exports = (sequelize, Sequelize) => {
     ageBlessesFemme: {
       type: Sequelize.STRING
     },
-    fauteConduite: {
+    causeAccident: {
+      type: Sequelize.STRING
+    },
+    vehicule:{
       type: Sequelize.JSON
     },
-    causeMateriel: {
-      type: Sequelize.JSON
+    nombreAnimal: {
+      type: Sequelize.INTEGER
     },
-    causeDiverse: {
-      type: Sequelize.JSON
+    nombrePieton: {
+      type: Sequelize.INTEGER
+    },
+    nombreMoto: {
+      type: Sequelize.INTEGER
+    },
+    nombreVehicule: {
+      type: Sequelize.INTEGER
+    },
+    nombreCamion: {
+      type: Sequelize.INTEGER
+    },
+    nombreBus: {
+      type: Sequelize.INTEGER
+    },
+    nombreEngin: {
+      type: Sequelize.INTEGER
     },
     chausse: {
       type: Sequelize.JSON
