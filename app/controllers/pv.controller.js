@@ -17,6 +17,12 @@ exports.create = (req, res) => {
     });
     return;
   }
+  if (!req.body.heure) {
+    res.status(400).send({
+      message: "Veillez entrer l'heure!'"
+    });
+    return;
+  }
 
   // Create a Tutorial
   const pv = {
