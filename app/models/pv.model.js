@@ -3,6 +3,9 @@ module.exports = (sequelize, Sequelize) => {
     collecteur: {
       type: Sequelize.STRING
     },
+    dateEnregistrement: {
+      type: Sequelize.STRING
+    },
     lieu: {
       type: Sequelize.STRING
     },

@@ -25,6 +25,8 @@ exports.create = (req, res) => {
   }
 
   // Create a Tutorial
+  var nowDate = new Date(); 
+  var date = nowDate.getFullYear()+'/'+(nowDate.getMonth()+1)+'/'+nowDate.getDate();
   const pv = {
     lieu:req.body.lieu,pvNumero:req.body.pvNumero,annee:req.body.annee,mois:req.body.mois,
     jour:req.body.jour,heure:req.body.heure,region:req.body.region,
@@ -35,7 +37,7 @@ exports.create = (req, res) => {
     nombreBlesseGrave:req.body.nombreBlesseGrave,nombreDeces:req.body.nombreDeces, 
     nombreDecesHomme:req.body.nombreDecesHomme, nombreDecesFemme:req.body.nombreDecesFemme, 
     ageDecesHomme:req.body.ageDecesHomme,ageDecesFemme:req.body.ageDecesFemme, 
-    nombreBlessesHomme:req.body.nombreBlessesHomme, 
+    nombreBlessesHomme:req.body.nombreBlessesHomme, dateEnregistrement:date,
     nombreBlessesFemme:req.body.nombreBlessesFemme,
     ageBlessesHomme:req.body.ageBlessesHomme, ageBlessesFemme:req.body.ageBlessesFemme,
     causeAccident:req.body.causeAccident,chausse:req.body.chausse,
