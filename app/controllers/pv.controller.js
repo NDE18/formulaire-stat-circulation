@@ -41,7 +41,7 @@ exports.create = (req, res) => {
     nombreBlessesFemme:req.body.nombreBlessesFemme,
     ageBlessesHomme:req.body.ageBlessesHomme, ageBlessesFemme:req.body.ageBlessesFemme,
     causeAccident:req.body.causeAccident,chausse:req.body.chausse,
-    nombreAnimal:req.body.nombreAnimal, ombrePieton:req.body.nombrePieton,
+    nombreAnimal:req.body.nombreAnimal, nombrePieton:req.body.nombrePieton,
     nombreMoto:req.body.nombreMoto,nombreBus:req.body.nombreBus, 
     nombreCamion:req.body.nombreCamion, nombreVehicule:req.body.nombreVehicule,
     nombreEngin:req.body.nombreEngin, vehicule:req.body.vehicule
